@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <header>
+    <nav id="desktop-nav">
+      <div class="logo">Yassine Ben Nessib</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="content">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="section__pic-container">
+            <img src="image/yass1.jpg" alt="Yassine Ben Nessib profile picture" width="200" height="160">
+          </div>
+          <div class="about-text">
+            <p>Hello, I'm Yassine Ben Nessib.</p>
+            <h3>Education</h3>
+            <p>I completed my technical baccalaureate in 2021. Following that, I undertook a preparatory program for engineering studies at the Institute of Preparatory Studies for Engineers in Kairouan from 2021 to 2023. Currently, I am enrolled in the engineering program at the Private Higher School of Engineering and Technologies, specializing in computer engineering.</p>
+            <h3>Motivation and Vision</h3>
+            <p>Driven by a passion for innovation, I find joy in overcoming challenges and contributing to the dynamic field of web development. My goal is to merge technical expertise with creativity to craft high-quality, responsive, and visually appealing websites.</p>
+            <h3>Philosophy</h3>
+            <p>I believe that continuous learning and a commitment to excellence are key drivers for success in the ever-evolving world of technology.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="content">
+        <h2>Experience</h2>
+        <p>Pursuing a 2-month training in Python programming, specializing in the creation and development of applications in Python.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="content">
+        <h2>Projects</h2>
+        <div>
+          <h3>Project 1</h3>
+          <p>Currently working on the development of an application aimed at simplifying the procedures for blood donors, making the process more efficient and user-friendly. This project involves the use of the C programming language. <a href="#">here</a>.</p>
+        </div>
+        <div>
+          <h3>Project 2</h3>
+          <p>Currently working on a project involving the control of an automobile using an ISIS schema and implementing the functionality through a MicroC programming language program. <a href="#">here</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out to me via email at <a href="mailto:Benncibyassine5@gmail.com">Benncibyassine5@gmail.com</a>. Connect with me on <a href="https://www.linkedin.com/in/yassine-ben-nessib-b37986283/" target="_blank">LinkedIn</a>.</p>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+        </div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button onclick="validateForm()">Submit</button>
+        </div>
+      </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
